@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React Today
+          Learn React Today (Git Branch Intro)
         </a>
       </header>
     </div>
