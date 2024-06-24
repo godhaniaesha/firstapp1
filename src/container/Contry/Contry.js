@@ -17,9 +17,7 @@ export default class Contry extends Component {
             countryname : 'Canada',
             population: '80 Billion'
         })
-        
     }
-
     
   render() {
     return (
