@@ -24,7 +24,7 @@ export default class Contry extends Component {
   render() {
     return (
       <div>
-        <h1>Contry class base component</h1>
+        <h1>Contry class base component  </h1>
         <p>{this.state.countryname}</p>
         <p>{this.state.population}</p>
 
