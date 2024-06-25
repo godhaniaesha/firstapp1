@@ -1,24 +1,26 @@
 import React, { Component } from 'react'
+import City from '../City/City';
+
 
 // sc = rcc 
 // class base component
 export default class Contry extends Component {
-    constructor(props) {
-        super(props);
-        
-        this.state = {
-            countryname : 'India',
-            population: '120 Billion'
-        }
-    }
+  constructor(props) {
+    super(props);
 
-    change = () => {
-        this.setState({
-            countryname : 'Canada',
-            population: '80 Billion'
-        })
+    this.state = {
+      countryname: 'India',
+      population: '120 Billion'
     }
-    
+  }
+
+  change = () => {
+    this.setState({
+      countryname: 'Canada',
+      population: '80 Billion'
+    })
+  }
+
   render() {
     return (
       <div>
@@ -28,7 +30,11 @@ export default class Contry extends Component {
 
         <button onClick={this.change}>Change Contry</button>
 
+       
+        <City cn={this.state.countryname} x={10}/>
       </div>
+
+
     )
   }
 }
