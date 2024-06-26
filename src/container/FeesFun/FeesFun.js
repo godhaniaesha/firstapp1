@@ -1,10 +1,32 @@
 import React from 'react';
 
 function FeesFun(props) {
+    let fees = '';
+    switch (props.course) {
+        case 'Full Stack':
+            fees = '70,000';
+            break;
+        case 'web designing':
+            fees = '20,000';
+            break;
+        case 'web development':
+            fees = '30,000';
+            break;
+        case 'Android development':
+            fees = '40,000';
+            break;
+        case 'Flutter development':
+            fees = '60,000';
+            break;
+        default:
+            fees = '';
+            break;
+    }
+
     return (
 
         <div>
-            <p>fees : {props.x}</p>
+            <p>fees : {fees}</p>
         </div>
     );
 }

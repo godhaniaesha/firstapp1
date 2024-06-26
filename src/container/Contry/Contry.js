@@ -30,11 +30,9 @@ export default class Contry extends Component {
 
         <button onClick={this.change}>Change Contry</button>
 
-       
-        <City cn={this.state.countryname} x={10}/>
+<City con={this.state.countryname} />
+        {/* <City cn={this.state.countryname} x={10} /> */}
       </div>
-
-
     )
   }
 }

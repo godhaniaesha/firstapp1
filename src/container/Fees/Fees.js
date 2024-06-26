@@ -26,7 +26,7 @@ export default class Fees extends Component {
         }
         return (
             <div>
-                
+
                 <p>Fees : {fees}</p>
 
             </div>

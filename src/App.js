@@ -2,15 +2,19 @@ import Contry from "./container/Contry/Contry";
 import ContryFun from "./container/ContryFun/ContryFun";
 import Cource from "./container/Cource/Cource";
 import CourceFun from "./container/CourceFun/CourceFun";
+import Timer from "./container/Timer/Timer";
+import TimerFun from "./container/Timer/TimerFun";
 
 
 function App() {
   return (
     <>
-      <Contry />
+      {/* <Contry />
       <ContryFun />
       <Cource />
-      <CourceFun />
+      <CourceFun /> */}
+      <Timer />
+      <TimerFun /> 
     </>
   );
 }
