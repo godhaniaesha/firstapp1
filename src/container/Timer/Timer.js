@@ -1,38 +1,38 @@
 import React, { Component } from 'react'
 
 export default class Timer extends Component {
-    // 1  inishlize state value
+    // 1 Mounting : inishlize state value
     constructor(props) {
         super(props);
         this.state = {
             time: new Date()
         }
     }
-    
+
     tic = () => {
-        this.setState ({
+        this.setState({
             time: new Date()
         });
     }
 
-    // 3  get data in to server
+    // 3 componentDidMount : get data in to server
     componentDidMount = () => {
-      this.RefranceTime =  setInterval(() => this.tic(), 1000);
+        this.RefranceTime = setInterval(() => this.tic(), 1000);
     }
 
-    //4 used for after updating stste/props
+    //4 componentDidUpdate : used for after updating stste/props
     componentDidUpdate = (preProps, preState) => {
-        if (this.state.time !== preState.time )  {
-                 console.log("componentDidUpdate");       
+        if (this.state.time !== preState.time) {
+            console.log("componentDidUpdate");
         }
     }
 
-    // 5 used to after nevigate 
+    // 5 componentWillUnmount : used to after nevigate 
     componentWillUnmount = () => {
-       clearInterval(this.RefranceTime);
+        clearInterval(this.RefranceTime);
     }
-    
-    // 2 Display 
+
+    // 2 render : Display 
     render() {
         return (
             <div>
